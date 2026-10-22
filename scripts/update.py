@@ -58,6 +58,7 @@ def formula(tag, checksums):
            "-I#{mtp.opt_include}", "-L#{mtp.opt_lib}", "-lmtp", "-o", "switchpack-mtp"
     bin.install "switchpack-mtp"
     pkgshare.install "switchpack.json", "switchpack.lock.json"
+    doc.install "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "licenses"
   end
 
   test do
