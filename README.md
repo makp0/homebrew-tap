@@ -10,7 +10,9 @@ switchpack install --mtp --dry-run
 ```
 
 Or use `--target <mounted SD root>` for Hekate USB Mass Storage or a card reader.
-Homebrew installs libmtp and compiles the USB helper automatically. Bun is not
+Homebrew installs libmtp and compiles the USB helper automatically. switchpack
+0.2.0 and later also install sevenzip for `.7z` packages, plus sysmodule examples
+under `$(brew --prefix)/share/switchpack/examples`. Bun is not
 required. Supports macOS 15+ and Linux on ARM64 and x64.
 
 Upgrade with `brew update && brew upgrade switchpack`.

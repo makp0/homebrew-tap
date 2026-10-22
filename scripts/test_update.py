@@ -17,6 +17,12 @@ class FormulaTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 formula(tag, checksums)
 
+    def test_sysmodule_releases_install_sevenzip(self):
+        self.assertNotIn('depends_on "sevenzip"', formula("v0.1.0", self.sums()))
+        result = formula("v0.2.0", self.sums())
+        self.assertIn('depends_on "sevenzip"', result)
+        self.assertIn('pkgshare.install "examples"', result)
+
 
 if __name__ == "__main__":
     unittest.main()
