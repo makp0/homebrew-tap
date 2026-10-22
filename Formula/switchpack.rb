@@ -2,7 +2,7 @@
 class Switchpack < Formula
   desc "Declarative Nintendo Switch homebrew manager"
   homepage "https://github.com/makp0/switchpack"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   depends_on "libmtp"
@@ -13,23 +13,23 @@ class Switchpack < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/makp0/switchpack/releases/download/v0.2.0/switchpack-darwin-arm64.tar.gz"
-      sha256 "9c1c34f0449d264bd5819f35711ab464ad2606bea16bea317589a35885d69d68"
+      url "https://github.com/makp0/switchpack/releases/download/v0.3.0/switchpack-darwin-arm64.tar.gz"
+      sha256 "e9fe6967b885d8941de136553b901b0f7a12091077d9a2f458f54950cbdd6f40"
     end
     on_intel do
-      url "https://github.com/makp0/switchpack/releases/download/v0.2.0/switchpack-darwin-x64.tar.gz"
-      sha256 "ac1bbec7f7d881b8af726a3ef7614889702e04cccfc6662372133ab8bc3e7aae"
+      url "https://github.com/makp0/switchpack/releases/download/v0.3.0/switchpack-darwin-x64.tar.gz"
+      sha256 "457880ba169c296c308afbe2080685393c9ebcf879c64618fb41ff79314804b8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/makp0/switchpack/releases/download/v0.2.0/switchpack-linux-arm64.tar.gz"
-      sha256 "9f426a53e3a5bf8158d96eb2b22ad269360938818c2b8df8480080fe5714c499"
+      url "https://github.com/makp0/switchpack/releases/download/v0.3.0/switchpack-linux-arm64.tar.gz"
+      sha256 "287580e3666c06dda9797596ad60f474abfbb8100afae043ae3bb90750069de9"
     end
     on_intel do
-      url "https://github.com/makp0/switchpack/releases/download/v0.2.0/switchpack-linux-x64.tar.gz"
-      sha256 "843b7749b6890d4f66ab9f6494b283b190d39f87ed9f25fff918a23a520f1ed2"
+      url "https://github.com/makp0/switchpack/releases/download/v0.3.0/switchpack-linux-x64.tar.gz"
+      sha256 "1decc9fad79592ce920652e029af6390f8d0d4c4f61f9e9073b92f0db4eecd83"
     end
   end
 
