@@ -39,7 +39,9 @@ class Switchpack < Formula
            "-I#{mtp.opt_include}", "-L#{mtp.opt_lib}", "-lmtp", "-o", "switchpack-mtp"
     bin.install "switchpack-mtp"
     pkgshare.install "switchpack.json", "switchpack.lock.json"
+    pkgshare.install "examples" if (buildpath/"examples").directory?
     doc.install "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "licenses"
+    doc.install "docs" if (buildpath/"docs").directory?
   end
 
   test do
